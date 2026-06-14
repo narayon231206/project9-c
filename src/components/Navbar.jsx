@@ -346,3 +346,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// Responsive checks finalized
