@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+  @apply font-inter;
+    @apply antialiased overflow-x-hidden bg-white text-slate-900 dark:bg-[#070b19] dark:text-slate-100 selection:bg-blue-500/20 selection:text-blue-600 dark:selection:text-blue-300;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Scrollbar for Premium Feel */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0f1419;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3b82f6 0%, #0ea5e9 100%);
+  border-radius: 9999px;
+  border: 3px solid #f8fafc;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3b82f6 0%, #0ea5e9 100%);
+  border: 3px solid #0f1419;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2563eb 0%, #06b6d4 100%);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2563eb 0%, #06b6d4 100%);
+}
+
+/* Glassmorphism custom classes */
+.glass {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Premium animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
+  
+  .animate-slide-in-up {
+    animation: slide-in-up 0.4s ease-out;
+  }
+  
+  .animate-slide-in-down {
+    animation: slide-in-down 0.4s ease-out;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-size: 200% 200%;
+    animation: gradient-shift 15s ease infinite;
+  }
+  
+  .backdrop-blur-xl {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-600 to-sky-500 dark:from-sky-400 dark:to-blue-400 bg-clip-text text-transparent;
+  }
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Premium Text & Border Gradients */
+.text-glow-blue {
+  text-shadow: 0 0 12px rgba(59, 130, 246, 0.3);
+}
+
+.text-gradient-premium {
+  @apply bg-gradient-to-r from-blue-600 to-emerald-500 dark:from-blue-400 dark:to-emerald-400 bg-clip-text text-transparent;
+}
+
+.text-gradient-cyan-blue {
+  @apply bg-gradient-to-r from-sky-500 to-blue-600 bg-clip-text text-transparent;
+}
+
+.text-gradient-blue-green {
+  @apply bg-gradient-to-r from-blue-600 to-green-600 dark:from-blue-400 dark:to-green-400 bg-clip-text text-transparent;
+}
+
+/* Animated mesh background blobs */
+.mesh-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(59, 130, 246, 0.05) 0px, transparent 50%),
+    radial-gradient(at 90% 10%, rgba(16, 185, 129, 0.04) 0px, transparent 50%),
+    radial-gradient(at 50% 80%, rgba(59, 130, 246, 0.03) 0px, transparent 50%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Glow Borders */
+.glow-border-blue {
+  border: 1px solid rgba(59, 130, 246, 0.12);
+  box-shadow: 0 0 20px -5px rgba(59, 130, 246, 0.05);
+}
+
+.glow-border-blue:hover {
+  border-color: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 0 25px -2px rgba(59, 130, 246, 0.1);
+}
+
+/* Skeleton Loading Shine Effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+.dark .shimmer {
+  background: linear-gradient(90deg, #0f172a 25%, #1e293b 50%, #0f172a 75%);
+}
+
+/* Custom transitions and scroll margins */
+.scroll-mt-header {
+  scroll-margin-top: 5rem;
+}
