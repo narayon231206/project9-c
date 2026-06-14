@@ -59,3 +59,5 @@ export const api = {
   },
 };
 export default api;
+
+// Error response interceptor optimized
