@@ -59,3 +59,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+// Layout optimized for Next.js 16
