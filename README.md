@@ -45,18 +45,18 @@ This client uses the backend API under `/api/backend/*`, which is forwarded to t
 3. Set `NEXT_PUBLIC_API_URL` to the live backend URL.
 
 ## Live Links
-- Frontend: https://mediqueue-client.vercel.app/ (update after deployment)
+- Frontend: https://mediqueue-lern.vercel.app/ (update after deployment)
 - Backend API: https://mediqueue-server.onrender.com/ (update after deployment)
 
 ## Developer Information
 
-Name: Masud Rana
+Name: Narayon Chandra Barman
 
 GitHub:
-https://github.com/masudranamdra
+https://github.com/narayon231206/
 
 Email:
-masud.dev01@gmail.com
+narayon231206@gmail.com
 
 ---
 
@@ -71,7 +71,7 @@ masud.dev01@gmail.com
 ---
 # 📱 Responsive Design
 
-SportNest is fully optimized for:
+mediqueue is fully optimized for:
 
 - Mobile Devices
 - Tablets
@@ -86,11 +86,11 @@ This project is created for educational and learning purposes only.
 
 Server :
 
-# SportNest - Sports Facility Booking Platform (Server)
+# mediqueue -  landing  course Booking Platform (Server)
 
 ## Project Overview
 
-SportNest Server is the backend API server for the SportNest sports facility booking platform. It manages authentication, facilities, bookings, and database operations using Node.js, Express.js, and MongoDB.
+mediqueue Server is the backend API server for the mediqueue landing  course Booking Platform. It manages authentication,course, bookings, and database operations using Node.js, Express.js, and MongoDB.
 
 This project was developed to practice and demonstrate backend development concepts learned during coursework, including REST API creation, CRUD operations, authentication, database integration, middleware, and server deployment.
 
@@ -100,7 +100,7 @@ This project was developed to practice and demonstrate backend development conce
 
 Server Live Link:
 
-https://sportnest-mdra.onrender.com
+https://mediqueue-server.onrender.com
 
 ---
 
@@ -156,17 +156,6 @@ https://sportnest-mdra.onrender.com
 
 ## Installation Process
 
-### Clone Repository
-
-```bash
-git clone https://github.com/masudranamdra/SportNest-Server.git
-```
-
-### Move to Project Folder
-
-```bash
-cd SportNest-Server
-```
 
 ### Install Dependencies
 
@@ -211,11 +200,11 @@ GET  /api/auth/get-session
 ### Facility Routes
 
 ```bash
-GET    /api/facilities
-GET    /api/facilities/:id
-POST   /api/facilities
-PUT    /api/facilities/:id
-DELETE /api/facilities/:id
+GET    /api/ tutors
+GET    /api/tutors/:id
+POST   /api/tutors
+PUT    /api/tutors/:id
+DELETE /api/tutors/:id
 ```
 
 ### Booking Routes
@@ -227,37 +216,6 @@ DELETE /api/bookings/:id
 ```
 
 ---
-
-## Project Structure
-
-```bash
-SportNest-Server/
-│
-├── config/
-│
-├── controllers/
-│
-├── middleware/
-│
-├── models/
-│
-├── routes/
-│
-├── utils/
-│
-├── services/
-│
-├── database/
-│
-├── .env
-├── .env.example
-├── .gitignore
-├── package.json
-├── package-lock.json
-├── server.js
-└── README.md
-```
-
 ---
 
 ## Security Features
@@ -272,13 +230,13 @@ SportNest-Server/
 
 ## Developer Information
 
-Name: Masud Rana
+Name: Narayon Chandra Barman
 
 GitHub:
-https://github.com/masudranamdra
+https://github.com/narayon231206/
 
 Email:
-masud.dev01@gmail.com
+narayon231206@gmail.com
 
 ---
 
@@ -291,3 +249,4 @@ This project is created for educational and learning purposes only.
 This frontend client is fully production-ready.
 
 <!-- Last Checked: June 2026 -->
+
